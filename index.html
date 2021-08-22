@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FoodPrism</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+    /* home styling starts here */
+        
+        .home {
+            width: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/home-bg.jpg');
+            background-size: cover;
+            padding: 4em 0em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .home-container {
+            width: 50%;
+            /* background-image: url(images/home-bg.jpg); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: rgba(0, 0, 0, 0.2); */
+            padding: 2em;
+        }
+        
+        .button-container {
+            width: 50%;
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 2em; */
+        }
+        
+        .home-container h1,
+        h3 {
+            color: white;
+            /* padding: 0.5em; */
+        }
+        
+        .home-container h1 {
+            font-size: 4rem;
+        }
+        
+        .yel-color {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        
+        .pur-color {
+            font-weight: bold;
+            color: #202040;
+        }
+        
+        .home-btn {
+            font-weight: bold;
+            margin: 1em;
+            color: #202040;
+            background-color: #ffc107;
+            border: 2px solid #ffc107;
+            padding: 0.5em 1.2em;
+        }
+        
+        .login-btn {
+            color: #ffc107;
+            background-color: #202040;
+            border: 2px solid #202040;
+        }
+        
+        .home-btn:hover {
+            color: #ffc107;
+            background-color: #202040;
+            border: 2px solid #202040;
+        }
+        
+        .login-btn:hover {
+            color: #202040;
+            background-color: #ffc107;
+            border: 2px solid #ffc107;
+        }
+        /* home styling end here */
+        /* dishes section starts here */
+        
+        .dish-section {
+            width: 100%;
+            background-color: #e5e5f7;
+            opacity: 1;
+            background-image: radial-gradient(#ffc107 2px, #e5e5f7 2px);
+            background-size: 40px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 0.5em;
+        }
+        
+        .dish-section h1 {
+            margin: 1em 0em;
+            color: rgb(46, 46, 46);
+        }
+        
+        .dishes {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            padding: 1em 0.5em;
+            align-items: center;
+        }
+        
+        .dish-card {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            padding: 1em 0.5em;
+            background-color: #202040;
+        }
+        
+        .dish-card .dish-img {
+            width: 98%;
+            padding: 0.2em;
+        }
+        
+        .dish-card img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        
+        .dish-name {
+            color: white;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        
+        .dish-text p {
+            color: #ffc107;
+        }
+        
+        @media (max-width: 650px) {
+            html {
+                font-size: 12px;
+            }
+            .home-container {
+                width: 100%;
+            }
+            .home-container h1 {
+                font-size: 2rem;
+            }
+            .home-container h3 {
+                text-align: center;
+                font-size: 1rem;
+            }
+            .button-container {
+                width: 100%;
+            }
+            .dishes {
+                flex-direction: column;
+            }
+            .dish-card {
+                width: 90%;
+                margin: 1em 0em;
+            }
+            .dish-section h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+        
+        @media (min-device-width: 650px) and (max-device-width: 1000px) {
+            html {
+                font-size: 16px;
+            }
+            .home-container {
+                width: 100%;
+            }
+            .home-container h1 {
+                font-size: 3rem;
+            }
+            .home-container h3 {
+                text-align: center;
+                font-size: 2rem;
+            }
+            .button-container {
+                width: 70%;
+            }
+            /* .dishes {
+                /* flex-direction: column; */
+        }
+        
+        */ .dish-card {
+            width: 30%%;
+            margin: 1em 0em;
+        }
+        
+        .dish-section h1 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+    @media (min-device-width: 1000px) and (max-device-width: 1200px) {
+        .home-container {
+            width: 100%;
+        }
+        
+        .home-container h1 {
+            font-size: 3rem;
+        }
+        
+        .home-container h3 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        
+        .button-container {
+            width: 70%;
+        }
+    }
+    /* dishes section ends here */
+    </style>
+
+</head>
+
+<body>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col">
+                    <a class="navbar-brand" href="index.html">FoodPrism <span>Food Delivery</span></a>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <div class="social-media">
+                        <p class="mb-0 d-flex">
+                            <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                            <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                            <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                            <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+                <form action="#" class="searchform order-lg-last">
+                    <div class="form-group d-flex">
+                        <input type="text" class="form-control pl-3" placeholder="Search">
+                        <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+                    </div>
+                </form>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">User</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END nav -->
+
+    </section>
+    <!-- home section starts here -->
+    <section class="home">
+        <div class="home-container">
+            <h1>Order <span class="yel-color">Food</span> Online</h1>
+            <h3>From Your Favourite <span class="yel-color">Restaraunts</span></h3>\
+            <div class="button-container">
+                <a class="login-btn home-btn" href="login.html">Login</a>
+                <a class="signup-btn home-btn" href="sign up.html">Sign Up</a>
+            </div>
+            <h3><span class="yel-color">Log in</span > or <span class="yel-color">Sign up</span> to get started</h3>
+        </div>
+    </section>
+    <!-- dishes section start here -->
+    <section class="dish-section">
+        <h1>More than <span class="pur-color">10,000</span> dishes to <span class="pur-color">order</span></h1>
+        <div class="dishes">
+            <div class="dish-card">
+                <div class="dish-img">
+                    <img src="images/burger.jpg" alt="">
+                </div>
+                <div class="dish-text">
+                    <h2 class="dish-name">Burgers</h2>
+                    <p>Various types of Burgers</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-img">
+                    <img src="images/paki.jpg" alt="">
+                </div>
+                <div class="dish-text">
+                    <h2 class="dish-name">Pakistani Food</h2>
+                    <p>Wide range of Desi food</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-img">
+                    <img src="images/pizza.jpg" alt="">
+                </div>
+                <div class="dish-text">
+                    <h2 class="dish-name">Pizza</h2>
+                    <p>Delicious italian Pizza</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-img">
+                    <img src="images/sweet.jpg" alt="">
+                </div>
+                <div class="dish-text">
+                    <h2 class="dish-name">Deserts</h2>
+                    <p>All types of deserts</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- home section ends here -->
+    <script src="js/redirect.js"></script>
+    <script src="js/signup.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
